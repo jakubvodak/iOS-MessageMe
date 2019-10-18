@@ -102,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="163.5" width="414" height="698.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="Hbg-Ut-a8z" customClass="MessageTableViewCell" customModule="MessageMe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="70" id="Hbg-Ut-a8z" customClass="MessageTableViewCell" customModule="MessageMe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hbg-Ut-a8z" id="3Ui-HO-mFE">
@@ -145,6 +145,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="syY-2L-tlt" id="KQp-xB-ecp"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -166,6 +169,7 @@
                         <viewLayoutGuide key="safeArea" id="sg8-0p-2T9"/>
                     </view>
                     <connections>
+                        <outlet property="lblName" destination="af8-rH-4FM" id="tNN-Im-HqB"/>
                         <outlet property="tableView" destination="NTl-Rx-rpp" id="r7p-L9-Au1"/>
                         <outlet property="textField" destination="9JU-U7-MFo" id="tNY-NR-Xbp"/>
                     </connections>

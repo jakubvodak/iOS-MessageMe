@@ -18,6 +18,7 @@
 		CBE00C9D235897FB00324807 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C9C235897FB00324807 /* TitleLabel.swift */; };
 		CBE00C9F2358B4AF00324807 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C9E2358B4AF00324807 /* Person.swift */; };
 		CBE00CA22359AE3F00324807 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */; };
+		CBE00CA42359B36100324807 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00CA32359B36100324807 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CBE00C9C235897FB00324807 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		CBE00C9E2358B4AF00324807 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		CBE00CA32359B36100324807 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CBE00C9E2358B4AF00324807 /* Person.swift */,
+				CBE00CA32359B36100324807 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				CBE00C872358800D00324807 /* MessageMe.xcdatamodeld in Sources */,
 				CBE00C7D2358800D00324807 /* AppDelegate.swift in Sources */,
 				CBE00C7F2358800D00324807 /* SceneDelegate.swift in Sources */,
+				CBE00CA42359B36100324807 /* Message.swift in Sources */,
 				CBE00C9A235885EF00324807 /* MessagingViewController.swift in Sources */,
 				CBE00C9F2358B4AF00324807 /* Person.swift in Sources */,
 				CBE00CA22359AE3F00324807 /* MessageTableViewCell.swift in Sources */,
