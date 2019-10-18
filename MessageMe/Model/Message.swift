@@ -32,6 +32,12 @@ class Message {
         }
     }
 
+    var soucet: Int {
+        get {
+            return 1+1
+        }
+    }
+
     // MARK: - Object Lifecycle
 
     init(text: String, date: Date, sender: Person) {

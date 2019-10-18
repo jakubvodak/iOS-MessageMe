@@ -57,7 +57,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="goButtonTopConstraints" destination="FNA-pR-Jva" id="9UL-cG-vyb"/>
                         <outlet property="textInput" destination="7wH-D8-d3C" id="UVU-yZ-LFy"/>
                     </connections>
                 </viewController>
@@ -152,6 +151,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="sg8-0p-2T9" firstAttribute="trailing" secondItem="NTl-Rx-rpp" secondAttribute="trailing" id="3hQ-BD-0uR"/>
                             <constraint firstItem="9JU-U7-MFo" firstAttribute="top" secondItem="af8-rH-4FM" secondAttribute="bottom" constant="15" id="9Z3-RT-FcG"/>

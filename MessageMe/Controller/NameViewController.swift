@@ -12,23 +12,9 @@ class NameViewController: UIViewController {
 
     // MARK: - Variables
 
-    @IBOutlet weak var goButtonTopConstraints: NSLayoutConstraint!
-
     @IBOutlet weak var textInput: UITextField!
-    
-    // MARK: - Object Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        applyAppearance()
-    }
 
     // MARK: - Functions
-
-    func applyAppearance() {
-
-    }
 
     @IBAction func goAction() {
         //Zahajeni chatu

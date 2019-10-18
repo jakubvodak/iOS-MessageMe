@@ -22,4 +22,10 @@ class MessageTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        self.backgroundColor = .clear
+    }
 }
