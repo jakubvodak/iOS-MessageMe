@@ -17,6 +17,7 @@
 		CBE00C9A235885EF00324807 /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C99235885EF00324807 /* MessagingViewController.swift */; };
 		CBE00C9D235897FB00324807 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C9C235897FB00324807 /* TitleLabel.swift */; };
 		CBE00C9F2358B4AF00324807 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C9E2358B4AF00324807 /* Person.swift */; };
+		CBE00CA22359AE3F00324807 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CBE00C99235885EF00324807 /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
 		CBE00C9C235897FB00324807 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		CBE00C9E2358B4AF00324807 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		CBE00C942358833F00324807 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CBE00CA02359ADEE00324807 /* Cell */,
 				CBE00C9B235897B400324807 /* Label */,
 			);
 			path = View;
@@ -117,6 +120,14 @@
 				CBE00C9C235897FB00324807 /* TitleLabel.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		CBE00CA02359ADEE00324807 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				CBE00C7F2358800D00324807 /* SceneDelegate.swift in Sources */,
 				CBE00C9A235885EF00324807 /* MessagingViewController.swift in Sources */,
 				CBE00C9F2358B4AF00324807 /* Person.swift in Sources */,
+				CBE00CA22359AE3F00324807 /* MessageTableViewCell.swift in Sources */,
 				CBE00C98235885B900324807 /* NameViewController.swift in Sources */,
 				CBE00C9D235897FB00324807 /* TitleLabel.swift in Sources */,
 			);

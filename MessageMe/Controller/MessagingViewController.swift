@@ -16,6 +16,7 @@ class MessagingViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var tableView: UITableView!
 
     // MARK: - Object Lifecycle
 
