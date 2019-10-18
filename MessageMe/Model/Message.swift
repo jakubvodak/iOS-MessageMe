@@ -24,6 +24,14 @@ class Message {
         }
     }
 
+    var plainData: [String: Any] {
+        get {
+            return ["text": text,
+                    "date": dateString,
+                    "sender": sender.name]
+        }
+    }
+
     // MARK: - Object Lifecycle
 
     init(text: String, date: Date, sender: Person) {

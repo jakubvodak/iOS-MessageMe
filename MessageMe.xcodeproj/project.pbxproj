@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3AEB3529605D22D1D8EF22 /* libPods-MessageMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60293CBF930D01A82AF3B268 /* libPods-MessageMe.a */; };
 		CBE00C7D2358800D00324807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C7C2358800D00324807 /* AppDelegate.swift */; };
 		CBE00C7F2358800D00324807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C7E2358800D00324807 /* SceneDelegate.swift */; };
 		CBE00C842358800D00324807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE00C822358800D00324807 /* Main.storyboard */; };
@@ -19,9 +20,13 @@
 		CBE00C9F2358B4AF00324807 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00C9E2358B4AF00324807 /* Person.swift */; };
 		CBE00CA22359AE3F00324807 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */; };
 		CBE00CA42359B36100324807 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE00CA32359B36100324807 /* Message.swift */; };
+		CBE00CA62359DA1700324807 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBE00CA52359DA1700324807 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B110875083D4E95E2E39D15 /* Pods-MessageMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMe.debug.xcconfig"; path = "Target Support Files/Pods-MessageMe/Pods-MessageMe.debug.xcconfig"; sourceTree = "<group>"; };
+		60293CBF930D01A82AF3B268 /* libPods-MessageMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6BE338A5891081FB30BE23 /* Pods-MessageMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMe.release.xcconfig"; path = "Target Support Files/Pods-MessageMe/Pods-MessageMe.release.xcconfig"; sourceTree = "<group>"; };
 		CBE00C792358800D00324807 /* MessageMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE00C7C2358800D00324807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE00C7E2358800D00324807 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		CBE00C9E2358B4AF00324807 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CBE00CA12359AE3F00324807 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		CBE00CA32359B36100324807 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CBE00CA52359DA1700324807 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3AEB3529605D22D1D8EF22 /* libPods-MessageMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1E3FF90B853B308F879C9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B110875083D4E95E2E39D15 /* Pods-MessageMe.debug.xcconfig */,
+				6F6BE338A5891081FB30BE23 /* Pods-MessageMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		307D10018866A90C1DD11BA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60293CBF930D01A82AF3B268 /* libPods-MessageMe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBE00C702358800C00324807 = {
 			isa = PBXGroup;
 			children = (
 				CBE00C7B2358800D00324807 /* MessageMe */,
 				CBE00C7A2358800D00324807 /* Products */,
+				0B1E3FF90B853B308F879C9E /* Pods */,
+				307D10018866A90C1DD11BA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +139,7 @@
 				CBE00C882358800E00324807 /* Assets.xcassets */,
 				CBE00C8D2358800E00324807 /* Info.plist */,
 				CBE00C852358800D00324807 /* MessageMe.xcdatamodeld */,
+				CBE00CA52359DA1700324807 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -140,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBE00C902358800E00324807 /* Build configuration list for PBXNativeTarget "MessageMe" */;
 			buildPhases = (
+				F9B175DF35965AB00D45F047 /* [CP] Check Pods Manifest.lock */,
 				CBE00C752358800C00324807 /* Sources */,
 				CBE00C762358800C00324807 /* Frameworks */,
 				CBE00C772358800C00324807 /* Resources */,
+				BF61A317CDA23601F5AF8DD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +221,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE00C8C2358800E00324807 /* LaunchScreen.storyboard in Resources */,
+				CBE00CA62359DA1700324807 /* GoogleService-Info.plist in Resources */,
 				CBE00C892358800E00324807 /* Assets.xcassets in Resources */,
 				CBE00C842358800D00324807 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF61A317CDA23601F5AF8DD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessageMe/Pods-MessageMe-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessageMe/Pods-MessageMe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessageMe/Pods-MessageMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B175DF35965AB00D45F047 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessageMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBE00C752358800C00324807 /* Sources */ = {
@@ -354,35 +426,45 @@
 		};
 		CBE00C912358800E00324807 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B110875083D4E95E2E39D15 /* Pods-MessageMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "MessageMe/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = strv.MessageMe;
+				PRODUCT_BUNDLE_IDENTIFIER = ict.MessageMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CBE00C922358800E00324807 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6BE338A5891081FB30BE23 /* Pods-MessageMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "MessageMe/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = strv.MessageMe;
+				PRODUCT_BUNDLE_IDENTIFIER = ict.MessageMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

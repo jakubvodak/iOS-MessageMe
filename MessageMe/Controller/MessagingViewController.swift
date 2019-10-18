@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MessagingViewController: UIViewController, UITableViewDataSource {
 
@@ -25,7 +26,8 @@ class MessagingViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
 
         lblName.text = myself?.name
-        tableView.rowHeight = 70
+        tableView.estimatedRowHeight = 70
+        tableView.rowHeight = UITableView.automaticDimension
     }
 
     // MARK: - Functions
@@ -41,13 +43,14 @@ class MessagingViewController: UIViewController, UITableViewDataSource {
 
             //send message
             let message = Message(text: text, date: Date(), sender: myself)
-            messages.append(message)
+            //messages.append(message)
+            sendData(message.plainData)
 
             //clear input
             textField.text = ""
 
             //reload table data
-            tableView.reloadData()
+            //tableView.reloadData()
         }
     }
 
@@ -69,5 +72,15 @@ class MessagingViewController: UIViewController, UITableViewDataSource {
         cell.lblTime.text = message.dateString
 
         return cell
+    }
+
+    // MARK: - Firebase
+
+    func sendData(_ data: [String: Any]) {
+
+        print(data)
+
+        let trigger = Database.database().reference(withPath: "Messages").childByAutoId()
+        trigger.setValue(data)
     }
 }
